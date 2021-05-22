@@ -1,5 +1,5 @@
 <template>
-  <van-cell class="art-item-tab">
+  <van-cell class="art-item-tab" :to="{name:'article',params:{articleId:article.art_id}}">
     <div class="title van-multi-ellipsis--l2" slot="title">{{ article.title }}</div>
     <div class="art-content" slot="label">
       <div class="art-img" v-if="article.cover.type===3">

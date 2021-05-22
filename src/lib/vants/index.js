@@ -13,13 +13,20 @@ import {
   Grid,
   GridItem,
   Cell,
+  CellGroup,
   Dialog,
   Tab,
   Tabs,
   List,
   PullRefresh,
   Popup,
-  Search
+  Search,
+  Divider,
+  Loading,
+  ImagePreview,
+  Badge,
+  Picker,
+  DatetimePicker
 } from 'vant'
 
 Vue.use(Button)
@@ -42,3 +49,10 @@ Vue.use(List)
 Vue.use(PullRefresh)
 Vue.use(Popup)
 Vue.use(Search)
+Vue.use(Divider)
+Vue.use(Loading)
+Vue.use(CellGroup)
+Vue.use(ImagePreview)
+Vue.use(Badge)
+Vue.use(Picker)
+Vue.use(DatetimePicker)

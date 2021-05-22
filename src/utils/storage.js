@@ -4,7 +4,10 @@
  * @param value
  */
 export function setItem (key, value) {
-  value = value instanceof Object ? JSON.stringify(value) : value
+  // value = value instanceof Object ? JSON.stringify(value) : value
+  if (typeof value === 'object') {
+    value = JSON.stringify(value)
+  }
   window.localStorage.setItem(key, value)
 }
 

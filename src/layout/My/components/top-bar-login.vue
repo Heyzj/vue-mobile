@@ -12,7 +12,7 @@
           <span class="text">{{ userInfo.name }}</span>
         </div>
         <div class="right">
-          <van-button class="r-btn" icon="setting-o" type="info" size="mini" round>
+          <van-button to="/user" class="r-btn" icon="setting-o" type="info" size="mini" round>
             <span>编辑资料</span>
           </van-button>
         </div>
@@ -60,7 +60,10 @@ export default {
         const { data } = await getUserInfo()
         this.userInfo = data.data
       } catch (err) {
-        console.log(err)
+        this.$toast({
+          message: '获取用户信息失败',
+          position: 'top'
+        })
       }
     }
   }
